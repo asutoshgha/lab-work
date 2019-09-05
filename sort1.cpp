@@ -77,19 +77,15 @@ class SortingAlgorithms{
         return (i + 1); 
     } 
     //partiton by choosing random pivot
-        int partition_r(int low, int high) 
+    int partition_r(int low, int high) 
     { 
-       
-        
         srand(time(NULL)); 
         int random = low + rand() % (high - low); 
-    
         // Swap A[random] with A[high] 
         swap(&b[random], &b[high]); 
-    
         return partition(low, high); 
     } 
-        void heapify(int n,int i) 
+    void heapify(int n,int i) 
     { 
         int largest = i; 
         int l = 2*i + 1; 
@@ -159,7 +155,7 @@ class SortingAlgorithms{
             quickSort(pi + 1, high); 
         } 
     } 
-        void heapSort() 
+    void heapSort() 
     { 
         // Build heap (rearrange array) 
         for (int i = n / 2 - 1; i >= 0; i--) 
