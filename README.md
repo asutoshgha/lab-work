@@ -5,3 +5,4 @@ all this fuctions are included in one class called SortingAlgorithms.
 you can sort the array in whichever way you like:
 eg:
   insertionsort,recursive insertion sort,mergesort,heap sort and randomised quicksort. 
+this code is tested on a linux machine with standard GNU g++ compiler.
