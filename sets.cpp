@@ -11,6 +11,7 @@
 #include <set>
 #include <map>
 #include <complex>
+#include <unordered_map>
 #define MAX_N 1000001
 using namespace std;
 typedef long long lld;
@@ -20,7 +21,7 @@ struct Node
     int parent;
     int rank;
 };
-Node DSU[MAX_N];
+unordered_map<int,Node> DSU;
 
 
 inline void MakeSet(int x)
